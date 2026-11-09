@@ -21,4 +21,8 @@
 
 --extra-index-url=https://pypi.org/project/setuptools
 setuptools==80.9.0      # match exact version
-sphinx                  # use latest version, ==8.2.3 (Oct 2025)
+pytest                  # use pytest over unittest (latest)
+sphinx                  # sphinx documentation tool (latest)
+sphinx-rtd-theme
+# pdoc                  # alternative Python documentation tool (latest)
+build                   # Python build and packaging tool (latest)

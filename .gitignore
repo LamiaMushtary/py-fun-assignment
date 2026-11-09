@@ -1,121 +1,52 @@
-#------------------------------------------------------------------------------
-# Project-specific ignore rules
-#------------------------------------------------------------------------------
-
-# Git submodule and IDE configuration
+# ignore git-module files
 .gitmodules
-.env/
+.devcontainer/
 .vscode/
-.libs/
 
-# Generated output directories
-bin/
-out/
-target/
-build/
+# README.md
+README.md
+
+# implementation files
+*_impl.py
+
+# packaging and sphinx documentation files
 dist/
-doc/
-docs/
-docs/_build/
+*.rst
 
-# Python bytecode and cache
-__pycache__/
-*.py[codz]
-*$py.class
-.cache/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.hypothesis/
-
-# Python environments
-.venv/
-venv/
-env/
-ENV/
-env.bak/
-venv.bak/
-
-# Python packaging
-.Python
-*.egg
-*.egg-info/
-.eggs/
-develop-eggs/
-wheels/
-sdist/
-MANIFEST
-.installed.cfg
-
-# Test and coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-coverage.xml
-nosetests.xml
-*.cover
-*.py.cover
-
-# Distribution and temporary files
-downloads/
-parts/
-share/python-wheels/
-*.manifest
-*.spec
+# tmp files and directories
+*tmp/
+*temp/
 *.tmp
-*.BAK
-*.bak
-tmp/
-temp/
+*.temp
 
-# Logs
-log/
-logs/
+# log files and directories
+*log/
+*logs/
 *.log
-pip-log.txt
-pip-delete-this-directory.txt
 
-# Libraries and archives
-lib
-libs
-lib64/
-*.7z
-*.gz
-*.rar
+# archive files
 *.tar
 *.tgz
-*.tar.gz
 *.zip
-*.uue*
 
-# Java and IDE files from the original project rules
-*.class
-*.jar
-.classpath
-.project
-*.iml
-.idea
+# Sphinx documentation
+docs/_build/
 
-# Branch-related directories
-branch/
-branches/
+# PyBuilder
+target/
 
-# Other development tools
-.ipynb_checkpoints
-.spyderproject
-.spyproject
-.ropeproject
-.pyre/
-.pytype/
-.dmypy.json
-dmypy.json
-cython_debug/
-tempCodeRunnerFile.py
+# virtualenv
+.venv/
+venv/
+ENV/
 
-# Local-only configuration
-.gitconfig
-
-# Operating system files
-.DS_Store
+# byte-compiled, optimized, DLL, sphinx files
+__pycache__/
+.cache
+.pytest_cache/
+*.egg-info/
+*doctrees/
+*html/
+*.py[cod]
+*$py.class
+*.so

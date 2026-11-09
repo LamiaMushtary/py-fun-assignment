@@ -1,0 +1,20 @@
+# .keep files matching expressions for the 'find' command:
+# - find . $(cat .keep)
+# 
+\(
+ # exclude paths and files to preserve:
+ ! -path .
+
+ # exclude anything in paths
+ ! -path ./tmp\*
+
+ # exclude files
+ ! -name .keep
+ ! -name Makefile
+ ! -name index.rst
+ ! -name \*.py
+
+ # exclude content removed with the directory
+ ! -path \*doctrees/\*
+ ! -path \*html/\*
+\)

@@ -7,9 +7,9 @@ def main():
     # 
     # print("same Calculator instance" if (id(c1) == id(c2)) else "different Calculator instances")
     if (id(c1) == id(c2)):
-        print("same Calculator instance")
+        print("same Calculator instance: c1==c2")
     else:
-        print("different Calculator instances")
+        print("different Calculator instances: c1 != c2")
     # 
     print(f'{next()}: c1.add(1, 2)\t-> {c1.add(1, 2)}')
     print(f'{next()}: c2.add(8, 3)\t-> {c2.add(8, 3)}')
