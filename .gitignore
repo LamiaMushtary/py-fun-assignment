@@ -1,28 +1,86 @@
 #------------------------------------------------------------------------------
-# .gitignore with patterns of files and directories to be ignored by git.
-# //
-# see: https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+# Project-specific ignore rules
 #------------------------------------------------------------------------------
 
-# ignore git-module files
+# Git submodule and IDE configuration
 .gitmodules
 .env/
 .vscode/
 .libs/
 
-# ignore output directories with generated content
+# Generated output directories
 bin/
 out/
 target/
-*.class
+build/
+dist/
+doc/
+docs/
+docs/_build/
 
-# ignore patch files
-*.patch
+# Python bytecode and cache
+__pycache__/
+*.py[codz]
+*$py.class
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
 
-# ignore Java packaging files
-*.jar
+# Python environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
 
-# ignore other archives and encoding files
+# Python packaging
+.Python
+*.egg
+*.egg-info/
+.eggs/
+develop-eggs/
+wheels/
+sdist/
+MANIFEST
+.installed.cfg
+
+# Test and coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+nosetests.xml
+*.cover
+*.py.cover
+
+# Distribution and temporary files
+downloads/
+parts/
+share/python-wheels/
+*.manifest
+*.spec
+*.tmp
+*.BAK
+*.bak
+tmp/
+temp/
+
+# Logs
+log/
+logs/
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Libraries and archives
+lib
+libs
+lib64/
 *.7z
 *.gz
 *.rar
@@ -32,37 +90,32 @@ target/
 *.zip
 *.uue*
 
-# ignore folders with libraries (including sym-links)
-lib
-libs
+# Java and IDE files from the original project rules
+*.class
+*.jar
+.classpath
+.project
+*.iml
+.idea
 
-# ignore folders with branches
+# Branch-related directories
 branch/
 branches/
 
-# ignore folders with javadoc (generated)
-doc/
-docs/
+# Other development tools
+.ipynb_checkpoints
+.spyderproject
+.spyproject
+.ropeproject
+.pyre/
+.pytype/
+.dmypy.json
+dmypy.json
+cython_debug/
+tempCodeRunnerFile.py
 
-# ignore log directories and *.log files (generated)
-log/
-logs/
-*.log
+# Local-only configuration
+.gitconfig
 
-# ignore eclipse IDE project files
-.classpath
-.project
-
-# ignore IntelliJ IDE project files
-.iml
-.idea
-
-# ignore tmp directories, *.tmp and .BAK files
-tmp/
-temp/
-*.tmp
-*.BAK
-*.bak
-
-# ignore OSX hidden files (Mac)
+# Operating system files
 .DS_Store
