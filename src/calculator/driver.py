@@ -13,7 +13,7 @@ def main():
     # 
     print(f'{next()}: c1.add(1, 2)\t-> {c1.add(1, 2)}')
     print(f'{next()}: c2.add(8, 3)\t-> {c2.add(8, 3)}')
-    # print(f'{next()}: c1.add("1", "1")\t-> {c1.add("1", "1")}')     # <-- uncomment
+    print(f'{next()}: c1.add("1", "1")\t-> {c1.add("1", "1")}')     # <-- uncomment
     # print(f'{next()}: c1.add("X", "V")\t-> {c1.add("X", "V")}')
     # print(f'{next()}: c2.factorize(99)\t-> {c1.factorize(99)}')
     # # 
@@ -25,7 +25,8 @@ def main():
     # print(f'{next()}: c1.add("三", "五")\t\t-> {c1.add("三", "五")}')
 
     # set True to run the examples from the expression list
-    _run_list=False
+    #_run_list=False
+    _run_list=True  # Enable the assignment examples for validation.
     expr=[
         'c1.add("1", "1.600")',         # 2.6
         'c1.add("three", "1.600")',     # 4.6
