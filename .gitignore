@@ -8,7 +8,7 @@ README.md
 
 # implementation files
 *_impl.py
-
+!src/collections/collection_impl.py
 # packaging and sphinx documentation files
 dist/
 *.rst
